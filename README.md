@@ -43,9 +43,9 @@ This project builds a *binary text classifier* that predicts whether a financial
     ```
 
 5. The trained model will be saved as:
-  ```bash
-  news_sentiment_classifier_model.joblib
-  ```
+    ```bash
+    news_sentiment_classifier_model.joblib
+    ```
 
 
 
