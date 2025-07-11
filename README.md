@@ -59,9 +59,9 @@ We chose `joblib` over `pickle` because it handles large NumPy arrays and scikit
 
 ### 1️⃣ Train the Model (Task 5)
 
-``python
+```bash
 python news_sentiment_classifier.py
-``
+```
 
 ➡️ This saves `news_sentiment_classifier_model.joblib`.
 
@@ -69,9 +69,9 @@ python news_sentiment_classifier.py
 
 ### 2️⃣ Start the FastAPI Backend (Task 6)
 
-``bash
+```bash
 uvicorn main:app --reload
-``
+```
 
 ➡️ Access the API at:  
 http://127.0.0.1:8000
@@ -94,19 +94,19 @@ http://127.0.0.1:8000
 
 - Request:
 
-``json
+```json
 {
   "text": "The company faced significant losses this year."
 }
-``
+```
 
 - Response:
 
-``json
+```json
 {
   "label": "negative"
 }
-``
+```
 
 ---
 
