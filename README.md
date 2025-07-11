@@ -57,9 +57,7 @@ This project builds a *binary text classifier* that predicts whether a financial
 File	Description
 
 1. news_sentiment_classifier.py	- Python script that trains and saves model
-
 2. news_sentiment_classifier_model.joblib	- Saved trained model (Joblib format)
-
 3. README.md	- This documentation file
 4. requirements.txt - The requirements file for instant install of dependancies as mentioned above
 
