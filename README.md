@@ -1,4 +1,4 @@
-# News Sentiment Classifier (Task 5)
+# 📰 News Sentiment Classifier (Task 5)
 
 This project builds a *binary text classifier* that predicts whether a financial news sentence expresses a *positive* or *negative* sentiment. It uses a real-world dataset and saves the trained model for use in an API.
 

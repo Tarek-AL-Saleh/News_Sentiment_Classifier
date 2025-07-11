@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>News Sentiment Classifier</title>
+</head>
+<body>
+<h2>News Sentiment Classifier</h2>
+<textarea id="inputText" rows="5" cols="50" placeholder="Enter news sentence here..."></textarea><br />
+<button onclick="submitText()">Predict Sentiment</button>
+
+<h3>Prediction Result:</h3>
+<p id="result">--</p>
+
+<script>
+async function submitText() {
+    const text = document.getElementById("inputText").value;
+    if (!text.trim()) {
+        alert("Please enter some text.");
+        return;
+    }
+
+    const response = await fetch("http://127.0.0.1:8000/predict", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ text })
+    });
+
+    if (response.ok) {
+        const data = await response.json();
+        document.getElementById("result").textContent = data.label;
+    } else {
+        document.getElementById("result").textContent = "Error occurred";
+    }
+}
+</script>
+</body>
+</html>
