@@ -8,7 +8,6 @@ import joblib
 
 raw_dataset=load_dataset("descartes100/enhanced-financial-phrasebank")
 dataset=raw_dataset["train"]["train"]
-print(dataset[0])
 
 X=[]
 Y=[]
