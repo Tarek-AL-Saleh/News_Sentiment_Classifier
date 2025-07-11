@@ -28,6 +28,6 @@ class NewsInput(BaseModel):
 
 @app.post("/predict")
 async def predict_sentiment(input: NewsInput):
-    prediction = model.predict([input.text])[0]# 0 or 1
+    prediction = model.predict([input.text])[0]
     label = "negative" if prediction == 0 else "positive" 
     return {"label": label}
