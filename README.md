@@ -66,11 +66,8 @@ File	Description
 
 ✅ Requirements
 
-Python 3.8+
-
-scikit-learn
-
-datasets (Hugging Face)
-
-joblib
+1. Python 3.8+
+2. scikit-learn
+3. datasets (Hugging Face)
+4. joblib
 
