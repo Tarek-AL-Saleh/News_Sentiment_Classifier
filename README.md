@@ -34,11 +34,11 @@ This project builds a *binary text classifier* that predicts whether a financial
    venv\Scripts\activate     # on Windows
    ```
 3. Install dependencies:
-  ```bash
-  pip install -r requirements.txt
-  ```
+     ```bash
+    pip install -r requirements.txt
+    ```
 
-4. Run the training script:
+5. Run the training script:
   ```bash
   python news_sentiment_classifier.py
   ```
