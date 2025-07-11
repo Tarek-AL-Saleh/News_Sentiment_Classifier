@@ -32,15 +32,16 @@ This project builds a *binary text classifier* that predicts whether a financial
    python -m venv venv
    source venv/bin/activate  # on Linux/Mac
    venv\Scripts\activate     # on Windows
+   ```
 3. Install dependencies:
-
-pip install -r requirements.txt
-
+  ```bash
+  pip install -r requirements.txt
+  ```
 
 4. Run the training script:
-
-python news_sentiment_classifier.py
-
+  ```bash
+  python news_sentiment_classifier.py
+  ```
 
 5. The trained model will be saved as:
 
